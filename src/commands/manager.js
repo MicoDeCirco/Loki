@@ -20,7 +20,7 @@ module.exports = class {
     static run(message) {
         var content = message.content;
 
-        if(!content.startsWith(commandConfig.prefix) && message.author.equals(message.client.user))
+        if(!content.startsWith(commandConfig.prefix) || message.author.equals(message.client.user))
             return false;
 
         content = content.substring(commandConfig.prefix.length);
