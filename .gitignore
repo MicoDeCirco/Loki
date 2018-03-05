@@ -3,4 +3,4 @@ package-lock.json
 config/
 database/
 /.idea/
-/node_modules/
+
