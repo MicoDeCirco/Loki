@@ -3,5 +3,4 @@ package-lock.json
 config/
 database/
 /.idea/
-
 /Loki.iml
