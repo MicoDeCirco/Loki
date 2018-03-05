@@ -1,6 +1,6 @@
 const ownerConfig = require("./../../config/owner.json");
 
-module.exports = class {
+module.exports = class extends Command {
     getName() {
         return "eval";
     }
@@ -11,7 +11,7 @@ module.exports = class {
 
     run(args, message, user) {
         if(!(user.id == ownerConfig.id)) {
-            message.reply(":x: Sem permissão!");
+            this.reply(":x: Sem permissão!");
             return false;
         }
 

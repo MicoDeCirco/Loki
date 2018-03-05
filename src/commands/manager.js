@@ -5,6 +5,7 @@
 const path = require("path");
 const commands = require("./");
 const commandConfig = require("./../../config/commands.json");
+global.Command = require("./command");
 
 module.exports = class {
     static boot() {
@@ -37,6 +38,10 @@ module.exports = class {
         }
 
         var command = this.commands[name];
+
+        command.args = args;
+        command.message = message;
+        command.author = message.author;
 
         command.run(args, message, message.author);
     }

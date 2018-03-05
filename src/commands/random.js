@@ -1,4 +1,4 @@
-module.exports = class {
+module.exports = class extends Command {
     getName() {
         return "random";
     }
@@ -11,6 +11,6 @@ module.exports = class {
         var min = parseInt(args[0]),
             max = parseInt(args[1]);
         
-        message.reply(Math.floor(Math.random() * max + min));
+        this.reply(Math.floor(Math.random() * max + min));
     }
 };

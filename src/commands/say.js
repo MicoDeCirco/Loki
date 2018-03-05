@@ -1,4 +1,4 @@
-module.exports = class {
+module.exports = class extends Command {
     getName() {
         return "say";
     }
@@ -8,6 +8,6 @@ module.exports = class {
     }
 
     run(args, message, user) {
-        message.reply(args.join(" "));
+        this.reply(args.join(" "));
     }
 };
