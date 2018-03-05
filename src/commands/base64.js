@@ -1,6 +1,6 @@
 module.exports = class extends Command {
     static getName() {
-        return "reverse";
+        return "Base64";
     }
 
     static getDescription() {
@@ -8,6 +8,6 @@ module.exports = class extends Command {
     }
 
     run(args, message, user) {
-        this.reply(atob(args.join(" ")));
+        this.reply(Buffer.from(args.join(" ")).toString('base64'));
     }
 };
