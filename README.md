@@ -10,6 +10,4 @@ Passos para rodar a aplicação:
 
 -- Mudar o parâmetro "token" no arquivo config/account.json para o token do seu bot.
 
--- Mudar o parâmetro "id" no arquivo config/owner.json para o id do seu usuário no Discord.
-
 -- Roda o comando $ nodejs src/index.js ou rodar $ ./run.sh
