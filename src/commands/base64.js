@@ -4,7 +4,7 @@ module.exports = class extends Command {
     }
 
     static getDescription() {
-        return "converte uma string para base64";
+        return "Converte uma string para base64.";
     }
 
     run(args, message, user) {
