@@ -8,6 +8,6 @@ module.exports = class extends Command {
     }
 
     run(args, message, user) {
-        this.reply(args.reverse().join(" "));
+        this.reply(args.join(" ").split("").reverse().join(""));
     }
 };
