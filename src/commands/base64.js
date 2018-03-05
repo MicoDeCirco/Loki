@@ -1,6 +1,6 @@
 module.exports = class extends Command {
     static getName() {
-        return "Base64";
+        return "base64";
     }
 
     static getDescription() {
