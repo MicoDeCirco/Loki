@@ -1,4 +1,4 @@
-# Loki - A random discord bot
+# Loki -- A random discord bot
 
 Passos para rodar a aplicação:
 
