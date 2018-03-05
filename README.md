@@ -4,7 +4,7 @@ Passos para rodar a aplicação:
 
 -- Ter o NodeJS e o NPM instalado.
 
--- Rodar o comando $ npm install
+-- Rodar no terminal $ ./install.sh
 
 -- Renomear o diretório config_example/ para config/
 
