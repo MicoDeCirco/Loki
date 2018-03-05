@@ -1,10 +1,10 @@
 module.exports = class extends Command {
     static getName() {
-        return "Base64";
+        return "base64";
     }
 
     static getDescription() {
-        return "converte uma string para base64";
+        return "Converte uma string para base64.";
     }
 
     run(args, message, user) {
