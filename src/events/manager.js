@@ -12,7 +12,7 @@ module.exports = class {
         events.forEach(function(event){
             var name = path.basename(event, ".js");
             event = new(require("./"+name));
-            self.client.on(name, event.run);
+            self.client.on(name, exports.run);
         });
     }
 };

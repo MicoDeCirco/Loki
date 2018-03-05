@@ -43,6 +43,6 @@ module.exports = class {
         command.message = message;
         command.author = message.author;
 
-        command.run(args, message, message.author);
+        exports.run(args, message, message.author);
     }
 };
