@@ -10,4 +10,4 @@ Passos para rodar a aplicação:
 
 -- Mudar o parâmetro "token" no arquivo config/account.json para o token do seu bot.
 
--- Roda o comando $ nodejs src/index.js ou rodar $ ./run.sh
+-- Rodar o comando $ nodejs src/index.js ou rodar $ ./run.sh
